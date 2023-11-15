@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="Stylesheet" href="css/style1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/ab496f0bad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <nav>
+      <p>Sameeksha</p>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#pf">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="text">
+      <div class="left">
+        <h1>Hi, I'm <br /><span id="element"></span></h1>
+
+      </div>
+      <div class="right">
+        <img src="images\pfp.png" alt="profile" />
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <img src="images\pf2.jpg" alt="" />
+        </div>
+        <div class="col2">
+          <h1>About Me</h1>
+          <p>
+            I am a computer science student with a strong passion for
+            developing my skills and knowledge in the field. I'm constantly
+            seeking opportunities to learn and grow, and I'm dedicated to
+            mastering various computer science concepts and technologies. My
+            enthusiasm for this subject drives me to work hard and achieve my
+            goals.
+          </p>
+          <div class="titles">
+            <p class="p active" onclick="opentab('skills')">Skills</p>
+            <p class="p" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="contents act" id="skills">
+            <ul>
+              <li><span>Languages:</span><br />C, Python, Java, HTML, CSS</li>
+              <li><span>Technologies:</span><br />Web Development</li>
+            </ul>
+          </div>
+          <div class="contents" id="Education">
+            <ul>
+              <li><span>2019</span><br />Carmel English School</li>
+              <li><span>2019-2021</span><br />St. Aloysius PU College</li>
+              <li>
+                <span>2021-2025</span><br />St. Joseph Engineering College
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects">
+    <div class="container">
+      <h1>My Projects</h1>
+      <div class="project-list">
+        <div>
+          <img src="images\delivery.png" alt="" />
+          <h2>Food Delivery System</h2>
+          <p>
+            Using HTML, CSS ,PHP, mySQL built a website that enables users to
+            conveniently place food orders for home delivery.<br />
+          </p>
+        </div>
+        <div>
+          <img src="images\netflix.png" alt="" />
+          <h2>Netflix Clone</h2>
+          <p>
+            Using HTML, CSS and JavaScipt built a webpage that resembles
+            Netflix.<br />
+          </p>
+        </div>
+        <div>
+          <img src="images\drugs.png" alt="" />
+          <h2>Medicine Inventory Management System</h2>
+          <p>
+            Using C and Data structure concepts, developed a medicine
+            inventory management system to add, adjust, search and remove
+            medicines, enchancing medical store productivity.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pf">
+    <div class="container">
+      <h1>My Learnings</h1>
+      <div class="worklist">
+        <div class="work">
+          <img src="images/learn1.png" alt="" />
+          <div class="layer">
+            <h3>Introduction to Programming with MATLAB</h3>
+            <p>
+              an online non-credit course authorized by Vanderbilt University
+              and offered through Coursera
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/learn2.png" alt="" />
+          <div class="layer">
+            <h3>Simulink Onramp</h3>
+            <p>
+              self-paced training course authorized by MathWorks Training
+              Services
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/learn3.png" alt="" />
+          <div class="layer">
+            <h3>Basics of Python</h3>
+            <p>
+              an online non-credit course authorized by Infosys Springboard
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="colleft">
+          <h1>Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>sameeksha@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>7890876567</p>
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <button class="button">
+            <span class="button-content"><a href="images\Resume.pdf" download>Download CV</a></span>
+          </button>
+        </div>
+        <div class="colright">
+          <form class="form">
+            <div class="form-group">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your email" required />
+              <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn-right">Submit</button> </textarea>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> by Sameeksha</p>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Sameeksha'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
