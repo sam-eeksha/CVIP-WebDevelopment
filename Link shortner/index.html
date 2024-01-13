@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>URL Shortner</h1>
+      <div class="input-container">
+        <label for="longUrl">Long URL</label>
+        <input
+          type="text"
+          id="longUrl"
+          placeholder="https://www.example.com/your-long-url"
+        />
+      </div>
+      <div id="shortUrlResult"></div>
+      <button onclick="generateShortUrl()">Shorten</button>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ab496f0bad.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
